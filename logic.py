@@ -118,7 +118,7 @@ WHERE project_name=? AND user_id=?
         self.__executemany(sql, [(user_id, project_id)])
 
     def delete_skill(self, project_id, skill_id):
-        sql = "DELETE FROM skills WHERE skill_id = ? AND project_id = ? "
+        sql = "DELETE FROM project_skills WHERE skill_id = ? AND project_id = ?"
         self.__executemany(sql, [(skill_id, project_id)])
 
 

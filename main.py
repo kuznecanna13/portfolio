@@ -51,7 +51,7 @@ def start_command(message):
     bot.send_message(message.chat.id, """Привет! 🤠 Я бот-менеджер проектов 🤖
 Помогу тебе сохранить твои проекты и информацию о них! 🤙) 
 """)
-    bot.send_photo(message.chat.id, open('bot.jpg', 'rb'))
+    bot.send_photo(message.chat.id, open('images/bot.jpg', 'rb'))
     info(message)
     
 @bot.message_handler(commands=['info'])
